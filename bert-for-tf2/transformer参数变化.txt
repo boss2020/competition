@@ -1,0 +1,31 @@
+~~~self.weights1 = ~~~
+[<tf.Variable 'bert/encoder/layer_0/attention/self/query/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/query/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/key/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/key/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/value/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/value/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/dense/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/dense/bias:0' shape=(768,) dtype=float32>, 
+
+<tf.Variable 'bert/encoder/layer_0/attention/output/LayerNorm/gamma:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/LayerNorm/beta:0' shape=(768,) dtype=float32>]
+
+
+intermediate_output = self.intermediate_layer(attention_output)
+~~~self.weights2 = ~~~
+[<tf.Variable 'bert/encoder/layer_0/attention/self/query/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/query/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/key/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/key/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/value/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/value/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/dense/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/dense/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/LayerNorm/gamma:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/LayerNorm/beta:0' shape=(768,) dtype=float32>,
+
+<tf.Variable 'bert/encoder/layer_0/intermediate/kernel:0' shape=(768, 3072) dtype=float32>,
+<tf.Variable 'bert/encoder/layer_0/intermediate/bias:0' shape=(3072,) dtype=float32>]
+
+
+layer_output = self.output_projector([intermediate_output, attention_output], mask=mask)
+
+
+~~~self.weights3 = ~~~
+[<tf.Variable 'bert/encoder/layer_0/attention/self/query/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/query/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/key/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/key/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/value/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/self/value/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/dense/kernel:0' shape=(768, 768) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/dense/bias:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/LayerNorm/gamma:0' shape=(768,) dtype=float32>, <tf.Variable 'bert/encoder/layer_0/attention/output/LayerNorm/beta:0' shape=(768,) dtype=float32>, 
+
+<tf.Variable 'bert/encoder/layer_0/intermediate/kernel:0' shape=(768, 3072) dtype=float32>, 
+<tf.Variable 'bert/encoder/layer_0/intermediate/bias:0' shape=(3072,) dtype=float32>, 
+
+<tf.Variable 'bert/encoder/layer_0/output/dense/kernel:0' shape=(3072, 768) dtype=float32>, 
+<tf.Variable 'bert/encoder/layer_0/output/dense/bias:0' shape=(768,) dtype=float32>, 
+<tf.Variable 'bert/encoder/layer_0/output/LayerNorm/gamma:0' shape=(768,) dtype=float32>, 
+<tf.Variable 'bert/encoder/layer_0/output/LayerNorm/beta:0' shape=(768,) dtype=float32>]
+
+
+
+
