@@ -1,0 +1,1158 @@
+max_seq_len = 
+128
+adapter_size = 
+None
+flags = 0
+bc = 
+{'attention_probs_dropout_prob': 0.1, 'hidden_act': 'gelu', 'hidden_dropout_prob': 0.1, 'hidden_size': 768, 'initializer_range': 0.02, 'intermediate_size': 3072, 'max_position_embeddings': 512, 'num_attention_heads': 12, 'num_hidden_layers': 12, 'type_vocab_size': 2, 'vocab_size': 30522, 'ln_type': None, 'embedding_size': None}
+begin map_to_stock_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+bert_params = 
+{'initializer_range': 0.02, 'max_position_embeddings': 512, 'hidden_size': 768, 'embedding_size': None, 'project_embeddings_with_bias': True, 'vocab_size': 30522, 'use_token_type': True, 'use_position_embeddings': True, 'token_type_vocab_size': 2, 'hidden_dropout': 0.1, 'extra_tokens_vocab_size': None, 'project_position_embeddings': True, 'mask_zero': False, 'adapter_size': None, 'adapter_activation': 'gelu', 'adapter_init_scale': 0.001, 'num_heads': 12, 'size_per_head': None, 'query_activation': None, 'key_activation': None, 'value_activation': None, 'attention_dropout': 0.1, 'negative_infinity': -10000.0, 'intermediate_size': 3072, 'intermediate_activation': 'gelu', 'num_layers': 12, 'out_layer_ndxs': None, 'shared_layer': False}
+from_params
+WithParams __init__
+BertModelLayer
+BertModelLayer _construct
+_construct
+
+from_params
+WithParams __init__
+BertEmbeddingsLayer
+BertEmbeddingsLayer _construct
+_construct
+BertEmbeddingsLayer _construct finish
+instance = 
+<bert.embeddings.BertEmbeddingsLayer object at 0x7f8f5c469b50>
+
+
+from_params
+WithParams __init__
+TransformerEncoderLayer
+TransformerEncoderLayer _construct
+_construct
+TransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.TransformerEncoderLayer object at 0x7f8ee02d78b0>
+
+
+BertModelLayer finish
+instance = 
+<bert.model.BertModelLayer object at 0x7f8ee02bf760>
+
+!!!operator finish!!!
+input_ids = 
+Tensor("input_ids:0", shape=(None, 128), dtype=int32)
+!!!keras output!!!
+bert = 
+<bert.model.BertModelLayer object at 0x7f8ee02bf760>
+
+
+
+
+BertModelLayer build
+BertModelLayer build finish
+
+
+BertModelLayer call
+converted_call
+tf__call
+
+
+BertEmbeddingsLayer compute_mask
+调用compute_mask的函数时候直接调用if not self.support_masking:
+return  None返回对应值了
+
+
+
+使用embedding_output = self.embeddings_layer(inputs,mask=mask,training=training)
+调用对应的BertEmbeddingsLayer build以及BertEmbeddingsLayer call函数
+BertEmbeddingsLayer build
+
+from_params
+WithParams __init__
+PositionEmbeddingLayer
+
+PositionEmbeddingLayer _construct
+_construct
+PositionEmbeddingLayer _construct finish
+
+instance = 
+<bert.embeddings.PositionEmbeddingLayer object at 0x7f8ee0296760>
+WithParams __init__
+LayerNormalization
+_construct
+BertEmbeddingsLayer build finish
+
+
+
+BertEmbeddingsLayer call
+
+PositionEmbeddingLayer build
+Layer create_initializer
+PositionEmbeddingLayer build finish
+
+PositionEmbeddingLayer call
+PositionEmbeddingLayer call finish
+
+BertEmbeddingsLayer call finish
+
+
+
+BertEmbeddingsLayer compute_mask
+situation2
+return function
+
+
+
+
+
+TransformerEncoderLayer build
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f7758683a30>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f7758474280>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f7758474580>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f77585f0ac0>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f7758474f40>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f775848d9a0>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f77586a11f0>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f77586a1a00>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f77583b5d00>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f77583b51c0>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f77585c67c0>
+
+from_params
+WithParams __init__
+SingleTransformerEncoderLayer
+SingleTransformerEncoderLayer _construct
+_construct
+SingleTransformerEncoderLayer _construct finish
+instance = 
+<bert.transformer.SingleTransformerEncoderLayer object at 0x7f77583b5760>
+
+TransformerEncoderLayer build finish
+
+
+
+
+TransformerEncoderLayer call
+layer_ndx = 
+0
+
+
+
+SingleTransformerEncoderLayer build
+
+调用self.self_attention_layer = TransformerSelfAttentionLayer.from_params(...)
+对应的函数内容
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f77584ce8b0>
+
+调用self.intermediate_layer=keras.layers.Dense(...)
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+
+调用self.output_projector=ProjectionLayer.from_params(...)
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77586bcb80>
+SingleTransformerEncoderLayer build finish
+
+
+
+SingleTransformerEncoderLayer call
+
+这里attention_output = self.self_attention_layer(layer_input,
+mask=mask,training=training)调用TransformerSelfAttentionLayer build函数
+以及TransformerSelfAttentionLayer call函数
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f7758314bb0>
+
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7758314970>
+TransformerSelfAttentionLayer build finish
+
+TransformerSelfAttentionLayer call
+
+这里调用attention_head = self.attention_layer(layer_input,mask=mask,
+training=training)的对应的AttentionLayer build和AttentionLayer call函数
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+
+AttentionLayer compute_mask
+
+这里调用attention_output = self.attention_projector([attention_head,
+layer_input],mask=mask,training=training)调用ProjectionLayer build
+以及ProjectionLayer call函数
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+
+ProjectionLayer call
+ProjectionLayer call finish
+
+TransformerSelfAttentionLayer call finish
+
+
+昨天看到了这一部分的输出内容
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+
+ProjectionLayer call
+ProjectionLayer call finish
+
+SingleTransformerEncoderLayer call finish
+
+layer_ndx = 
+1
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f77585027f0>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77584f9d60>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f7758323190>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7758323640>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+2
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f7758252130>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f775850e430>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f775824a100>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7758255ee0>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+3
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f77584e23a0>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f775c6a9cd0>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f77583ee040>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77584c3a60>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+4
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f77586a4b80>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77585ae5b0>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f77582e3910>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77586a1310>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+5
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f77542ebf10>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7754260700>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f77542598b0>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77542e3e20>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+6
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f7754260bb0>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77541f53a0>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f775417fbb0>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7754189760>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+7
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f775417f700>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f775410ac70>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f7754122040>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7754122b80>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+8
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f7754097ca0>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7754049640>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f77541cc550>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77540aa8b0>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+9
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f7740785700>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77407b2fd0>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f778a3db1c0>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77407bb4f0>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+10
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f77407288e0>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f77406d89a0>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f77406d26d0>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f775411ad00>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+layer_ndx = 
+11
+SingleTransformerEncoderLayer build
+from_params
+WithParams __init__
+TransformerSelfAttentionLayer
+TransformerSelfAttentionLayer _construct
+_construct
+TransformerSelfAttentionLayer _construct finish
+instance = 
+<bert.transformer.TransformerSelfAttentionLayer object at 0x7f7740650bb0>
+Layer get_activation
+Layer get_activation finish
+Layer create_initializer
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7740665730>
+SingleTransformerEncoderLayer build finish
+SingleTransformerEncoderLayer call
+TransformerSelfAttentionLayer build
+from_params
+WithParams __init__
+AttentionLayer
+AttentionLayer _construct
+_construct
+AttentionLayer _construct finish
+instance = 
+<bert.attention.AttentionLayer object at 0x7f7740650f70>
+from_params
+WithParams __init__
+ProjectionLayer
+ProjectionLayer _construct
+_construct
+ProjectionLayer _construct finish
+instance = 
+<bert.transformer.ProjectionLayer object at 0x7f7740607820>
+TransformerSelfAttentionLayer build finish
+TransformerSelfAttentionLayer call
+AttentionLayer build
+Layer create_initializer
+Layer create_initializer
+Layer create_initializer
+AttentionLayer build finish
+AttentionLayer call
+AttentionLayer create_attention_mask
+AttentionLayer create_attention_mask finish
+AttentionLayer call finish
+AttentionLayer compute_mask
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+TransformerSelfAttentionLayer call finish
+ProjectionLayer build
+Layer create_initializer
+WithParams __init__
+LayerNormalization
+_construct
+ProjectionLayer build finish
+ProjectionLayer call
+ProjectionLayer call finish
+SingleTransformerEncoderLayer call finish
+after cycle
+TransformerEncoderLayer finish
+BertModelLayer call finish
+bert shape (None, 128, 768)
+$$$$$$$$$$$$$$$$$$$$$$$$$$$build2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+after build
+
+Done loading 196 BERT weights from: /home/xiaoguzai/origin-code/uncased_L-12_H-768_A-12/bert_model.ckpt into <bert.model.BertModelLayer object at 0x7f77586e6880> (prefix:bert). Count of weights not found in the checkpoint was: [0]. Count of weights with mismatched shape: [0]
+Unused weights from checkpoint: 
+	bert/embeddings/token_type_embeddings
+	bert/pooler/dense/bias
+	bert/pooler/dense/kernel
+	cls/predictions/output_bias
+	cls/predictions/transform/LayerNorm/beta
+	cls/predictions/transform/LayerNorm/gamma
+	cls/predictions/transform/dense/bias
+	cls/predictions/transform/dense/kernel
+	cls/seq_relationship/output_bias
+	cls/seq_relationship/output_weights
+Model: "functional_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_ids (InputLayer)       [(None, 128)]             0         
+_________________________________________________________________
+bert (BertModelLayer)        (None, 128, 768)          108890112 
+_________________________________________________________________
+lambda (Lambda)              (None, 768)               0         
+_________________________________________________________________
+dropout (Dropout)            (None, 768)               0         
+_________________________________________________________________
+dense (Dense)                (None, 768)               590592    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 768)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 2)                 1538      
+=================================================================
+Total params: 109,482,242
+Trainable params: 109,482,242
+Non-trainable params: 0
